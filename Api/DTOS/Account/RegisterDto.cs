@@ -11,7 +11,7 @@ namespace Api.DTOS.Account
         [StringLength(15, MinimumLength = 3, ErrorMessage = "FirstName must be at list{2}, and maximum {1} characters")]
         public string LastName { get; set; }
         [Required]
-        [RegularExpression("\t\r\n^\\w+@[a-zA-Z_]+?\\.[a-zA-Z]{2,3}$", ErrorMessage ="in valid email adderss")]
+        [RegularExpression("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$", ErrorMessage ="in valid email adderss")]
         public string Email { get; set; }
         [Required]
         [StringLength(15, MinimumLength = 3, ErrorMessage = "Password must be at list{2}, and maximum {1} characters")]

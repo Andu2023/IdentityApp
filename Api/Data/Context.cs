@@ -4,10 +4,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Api.Data
 {
-    public class Context : IdentityDbContext<User>
+    public class Context:IdentityDbContext<User>
     {
-        public Context(DbContextOptions<Context> options) : base(options)
+        public Context(DbContextOptions<Context> options):base(options) {
+       
         {
+            
+        }
         }
     }
 }
